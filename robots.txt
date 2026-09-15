@@ -1,10 +1,5 @@
 # Lumetech Technologies Production Robots File
 User-agent: *
 Allow: /
-Disallow: /admin/
 Disallow: /api/
-Disallow: /scratch/
 Disallow: /includes/
-
-Sitemap: http://localhost/web-lumetech/sitemap.xml
-Sitemap: http://localhost/web-lumetech/sitemap.php
