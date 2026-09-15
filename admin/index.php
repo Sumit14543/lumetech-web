@@ -71,9 +71,9 @@ require_once __DIR__ . '/../includes/functions.php';
 
         <div class="col-md-3">
           <div class="lum-card p-4 text-center">
-            <i class="bi bi-geo-alt text-info fs-1 d-block mb-2"></i>
-            <strong class="h3 lum-heading-3 text-white d-block mb-0">9</strong>
-            <span class="small text-muted">Regional SEO Hubs</span>
+            <i class="bi bi-buildings text-info fs-1 d-block mb-2"></i>
+            <strong class="h3 lum-heading-3 text-white d-block mb-0">10</strong>
+            <span class="small text-muted">Industry Verticals</span>
           </div>
         </div>
       </div>
