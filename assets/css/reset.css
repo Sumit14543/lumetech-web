@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Lumetech Base Reset & Accessibility Standards
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--lum-font-sans);
+  background-color: var(--lum-color-bg-body);
+  color: var(--lum-color-text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a,
+button,
+select,
+summary,
+label[for],
+[role="button"],
+[type="button"],
+[type="submit"],
+[type="reset"],
+[data-filter],
+[data-bs-toggle] {
+  cursor: pointer;
+}
+
+a {
+  color: var(--lum-color-accent-cyan);
+  text-decoration: none;
+  transition: color var(--lum-transition-fast);
+}
+
+a:hover {
+  color: var(--lum-color-accent-cyan-hover);
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid var(--lum-color-accent-cyan);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Screen reader visual hide utility */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Reduced Motion Respect */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

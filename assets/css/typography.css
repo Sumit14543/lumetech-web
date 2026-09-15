@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Lumetech Typography System
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6,
+.lum-heading-1, .lum-heading-2, .lum-heading-3, 
+.lum-heading-4, .lum-heading-5, .lum-heading-6 {
+  font-family: var(--lum-font-display);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--lum-color-text-primary);
+  margin-bottom: var(--lum-space-4);
+  letter-spacing: -0.02em;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+h1, .lum-heading-1 {
+  font-size: clamp(2.25rem, 5vw, var(--lum-fs-6xl));
+}
+
+h2, .lum-heading-2 {
+  font-size: clamp(1.75rem, 3.5vw, var(--lum-fs-5xl));
+}
+
+h3, .lum-heading-3 {
+  font-size: clamp(1.35rem, 2.5vw, var(--lum-fs-4xl));
+}
+
+h4, .lum-heading-4 {
+  font-size: var(--lum-fs-2xl);
+}
+
+h5, .lum-heading-5 {
+  font-size: var(--lum-fs-xl);
+}
+
+h6, .lum-heading-6 {
+  font-size: var(--lum-fs-lg);
+}
+
+p {
+  color: var(--lum-color-text-secondary);
+  font-size: var(--lum-fs-base);
+  margin-bottom: var(--lum-space-4);
+}
+
+.lum-lead {
+  font-size: var(--lum-fs-lg);
+  line-height: 1.7;
+  color: var(--lum-color-text-secondary);
+}
+
+.lum-text-gradient {
+  background: var(--lum-color-accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lum-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--lum-space-2);
+  padding: var(--lum-space-1) var(--lum-space-3);
+  font-size: var(--lum-fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--lum-color-accent-cyan);
+  background-color: rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: var(--lum-radius-full);
+}

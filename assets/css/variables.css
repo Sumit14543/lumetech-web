@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Lumetech Design System Tokens & CSS Custom Properties (Light Mode Only)
+   ========================================================================== */
+
+:root {
+  /* Brand Primary Palette (Logo Aligned: Brand Orange & Charcoal) */
+  --lum-color-primary-900: #F8FAFC;
+  --lum-color-primary-800: #F1F5F9;
+  --lum-color-primary-700: #E2E8F0;
+  --lum-color-accent-cyan: #FF6B00;
+  --lum-color-accent-cyan-hover: #E55D00;
+  --lum-color-accent-blue: #FF8500;
+  --lum-color-accent-gradient: linear-gradient(135deg, #FF6B00 0%, #FF8500 100%);
+  --lum-color-accent-gradient-hover: linear-gradient(135deg, #E55D00 0%, #E57700 100%);
+
+  /* Neutrals & Surfaces */
+  --lum-color-bg-body: #F8FAFC;
+  --lum-color-bg-surface: #FFFFFF;
+  --lum-color-bg-surface-elevated: #F1F5F9;
+  --lum-color-bg-light: #0F172A;
+  --lum-color-border: #E2E8F0;
+  --lum-color-border-subtle: #F1F5F9;
+
+  /* Typography Colors */
+  --lum-color-text-primary: #0F172A;
+  --lum-color-text-secondary: #475569;
+  --lum-color-text-muted: #64748B;
+  --lum-color-text-inverse: #F8FAFC;
+
+  /* Status Colors */
+  --lum-color-success: #10B981;
+  --lum-color-warning: #F59E0B;
+  --lum-color-danger: #EF4444;
+  --lum-color-info: #FF6B00;
+
+  /* Typography System */
+  --lum-font-sans: 'Inter', system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, sans-serif;
+  --lum-font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Modular Scale (Rem) */
+  --lum-fs-xs: 0.75rem;    /* 12px */
+  --lum-fs-sm: 0.875rem;   /* 14px */
+  --lum-fs-base: 1rem;     /* 16px */
+  --lum-fs-lg: 1.125rem;   /* 18px */
+  --lum-fs-xl: 1.25rem;    /* 20px */
+  --lum-fs-2xl: 1.5rem;    /* 24px */
+  --lum-fs-3xl: 1.875rem;  /* 30px */
+  --lum-fs-4xl: 2.25rem;   /* 36px */
+  --lum-fs-5xl: 3rem;      /* 48px */
+  --lum-fs-6xl: 3.75rem;   /* 60px */
+
+  /* Spacing Grid (4px base) */
+  --lum-space-1: 0.25rem;  /* 4px */
+  --lum-space-2: 0.5rem;   /* 8px */
+  --lum-space-3: 0.75rem;  /* 12px */
+  --lum-space-4: 1rem;     /* 16px */
+  --lum-space-5: 1.25rem;  /* 20px */
+  --lum-space-6: 1.5rem;   /* 24px */
+  --lum-space-8: 2rem;     /* 32px */
+  --lum-space-10: 2.5rem;  /* 40px */
+  --lum-space-12: 3rem;    /* 48px */
+  --lum-space-16: 4rem;    /* 64px */
+  --lum-space-20: 5rem;    /* 80px */
+  --lum-space-24: 6rem;    /* 96px */
+
+  /* Border Radii */
+  --lum-radius-sm: 6px;
+  --lum-radius-md: 10px;
+  --lum-radius-lg: 16px;
+  --lum-radius-xl: 24px;
+  --lum-radius-full: 9999px;
+
+  /* Elevation Shadows & Glows */
+  --lum-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --lum-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --lum-shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
+  --lum-shadow-glow: 0 4px 20px rgba(255, 107, 0, 0.3);
+  --lum-glass-bg: rgba(255, 255, 255, 0.88);
+  --lum-glass-backdrop: blur(16px);
+
+  /* Transitions */
+  --lum-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --lum-transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --lum-transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}

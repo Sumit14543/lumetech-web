@@ -1,0 +1,208 @@
+/* ==========================================================================
+   Lumetech Utilities & Layout System
+   ========================================================================== */
+
+/* --- Global Mobile Responsiveness & Anti-Overflow Protection --- */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+img, video, iframe, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 576px) {
+  .lum-section {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  
+  .lum-btn-lg {
+    padding: 0.85rem 1.25rem !important;
+    font-size: var(--lum-fs-base) !important;
+  }
+}
+
+/* --- Container --- */
+.lum-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--lum-space-4);
+  padding-right: var(--lum-space-4);
+}
+
+@media (min-width: 640px) {
+  .lum-container {
+    padding-left: var(--lum-space-6);
+    padding-right: var(--lum-space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lum-container {
+    padding-left: var(--lum-space-8);
+    padding-right: var(--lum-space-8);
+  }
+}
+
+/* --- Section Spacing --- */
+.lum-section {
+  padding-top: var(--lum-space-16);
+  padding-bottom: var(--lum-space-16);
+}
+
+.lum-section-sm {
+  padding-top: var(--lum-space-8);
+  padding-bottom: var(--lum-space-8);
+}
+
+.lum-section-lg {
+  padding-top: var(--lum-space-24);
+  padding-bottom: var(--lum-space-24);
+}
+
+/* --- Grid & Flex Utilities --- */
+.lum-grid {
+  display: grid;
+  gap: var(--lum-space-6);
+}
+
+.lum-grid-2 {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .lum-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.lum-grid-3 {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 640px) {
+  .lum-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .lum-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.lum-grid-4 {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 640px) {
+  .lum-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .lum-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.lum-flex {
+  display: flex;
+}
+
+.lum-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lum-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lum-gap-2 { gap: var(--lum-space-2); }
+.lum-gap-4 { gap: var(--lum-space-4); }
+.lum-gap-6 { gap: var(--lum-space-6); }
+
+/* --- Text Alignment & Helpers --- */
+.lum-text-center { text-align: center; }
+.lum-text-right { text-align: right; }
+.lum-text-left { text-align: left; }
+
+.lum-mt-0 { margin-top: 0 !important; }
+.lum-mb-0 { margin-bottom: 0 !important; }
+.lum-mb-4 { margin-bottom: var(--lum-space-4) !important; }
+.lum-mb-8 { margin-bottom: var(--lum-space-8) !important; }
+
+/* --- Space-Y Vertical Spacing Helpers --- */
+.space-y-1 > * + * { margin-top: 0.25rem !important; }
+.space-y-2 > * + * { margin-top: 0.5rem !important; }
+.space-y-3 > * + * { margin-top: 1rem !important; }
+.space-y-4 > * + * { margin-top: 1.25rem !important; }
+.space-y-5 > * + * { margin-top: 1.5rem !important; }
+.space-y-6 > * + * { margin-top: 2rem !important; }
+
+/* ==========================================================================
+   Global Pure Light Theme Bootstrap Class Overrides
+   ========================================================================== */
+.bg-dark,
+[class*="bg-dark"] {
+  background-color: var(--lum-color-bg-surface-elevated) !important;
+}
+
+.text-white {
+  color: var(--lum-color-text-primary) !important;
+}
+
+.border-secondary {
+  border-color: var(--lum-color-border) !important;
+}
+
+.bg-secondary {
+  background-color: var(--lum-color-bg-surface-elevated) !important;
+}
+
+.badge.bg-secondary {
+  background-color: var(--lum-color-bg-surface-elevated) !important;
+  color: var(--lum-color-text-primary) !important;
+}
+
+.badge.bg-info.text-dark {
+  background-color: var(--lum-color-accent-cyan) !important;
+  color: #FFFFFF !important;
+}
+
+.lum-card {
+  background-color: var(--lum-color-bg-surface) !important;
+  color: var(--lum-color-text-primary);
+}
+
+/* --- Brand Orange Icon & Accent Color Overrides --- */
+.text-info {
+  color: #FF6B00 !important;
+}
+
+.border-info {
+  border-color: rgba(255, 107, 0, 0.4) !important;
+}
+
+.hover-cyan:hover {
+  color: #FF6B00 !important;
+}
+
+/* --- Cursor Pointer Utility Class --- */
+.cursor-pointer,
+.pointer,
+.clickable {
+  cursor: pointer !important;
+}
