@@ -235,23 +235,31 @@ $og_image = $og_image ?? (SITE_URL . '/assets/images/logo/lumetech-logo-dark.svg
 
                 </div>
 
-                <!-- Megamenu Dark Bottom Quick Action Bar (5 Blocks in Lumetech Dark Charcoal #09041A) -->
+                <!-- Megamenu Dark Bottom Quick Action Bar (5 Real Site Links) -->
                 <div class="lum-megamenu-bottom-bar">
                   <div class="row g-0 text-center">
                     <div class="col">
-                      <a href="<?= SITE_URL ?>/services.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
+                      <a href="<?= SITE_URL ?>/portfolio.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
                         <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; border: 1px solid rgba(255, 255, 255, 0.3); color: #FF6B00; transition: all 0.2s ease;">
-                          <i class="bi bi-file-earmark-arrow-down fs-6"></i>
+                          <i class="bi bi-trophy fs-6"></i>
                         </div>
-                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Brochure</span>
+                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Case Studies</span>
                       </a>
                     </div>
                     <div class="col">
-                      <a href="<?= SITE_URL ?>/portfolio.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
+                      <a href="<?= SITE_URL ?>/industries.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
                         <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; border: 1px solid rgba(255, 255, 255, 0.3); color: #FF6B00; transition: all 0.2s ease;">
-                          <i class="bi bi-people fs-6"></i>
+                          <i class="bi bi-buildings fs-6"></i>
                         </div>
-                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Our Team</span>
+                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Industries</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="<?= SITE_URL ?>/blog.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; border: 1px solid rgba(255, 255, 255, 0.3); color: #FF6B00; transition: all 0.2s ease;">
+                          <i class="bi bi-journal-text fs-6"></i>
+                        </div>
+                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Tech Insights</span>
                       </a>
                     </div>
                     <div class="col">
@@ -260,14 +268,6 @@ $og_image = $og_image ?? (SITE_URL . '/assets/images/logo/lumetech-logo-dark.svg
                           <i class="bi bi-building fs-6"></i>
                         </div>
                         <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">About Us</span>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="<?= SITE_URL ?>/contact.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; border: 1px solid rgba(255, 255, 255, 0.3); color: #FF6B00; transition: all 0.2s ease;">
-                          <i class="bi bi-briefcase fs-6"></i>
-                        </div>
-                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Job Openings</span>
                       </a>
                     </div>
                     <div class="col">
@@ -365,7 +365,7 @@ $og_image = $og_image ?? (SITE_URL . '/assets/images/logo/lumetech-logo-dark.svg
 
                 </div>
 
-                <!-- Megamenu Dark Bottom Quick Action Bar -->
+                <!-- Megamenu Dark Bottom Quick Action Bar (5 Real Site Links) -->
                 <div class="lum-megamenu-bottom-bar">
                   <div class="row g-0 text-center">
                     <div class="col">
@@ -377,19 +377,27 @@ $og_image = $og_image ?? (SITE_URL . '/assets/images/logo/lumetech-logo-dark.svg
                       </a>
                     </div>
                     <div class="col">
-                      <a href="<?= SITE_URL ?>/contact.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; border: 1px solid rgba(255, 255, 255, 0.3); color: #FF6B00; transition: all 0.2s ease;">
-                          <i class="bi bi-play-circle-fill fs-6"></i>
-                        </div>
-                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Request Demo</span>
-                      </a>
-                    </div>
-                    <div class="col">
                       <a href="<?= SITE_URL ?>/portfolio.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
                         <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; border: 1px solid rgba(255, 255, 255, 0.3); color: #FF6B00; transition: all 0.2s ease;">
                           <i class="bi bi-trophy fs-6"></i>
                         </div>
-                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Client Proof</span>
+                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Case Studies</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="<?= SITE_URL ?>/industries.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; border: 1px solid rgba(255, 255, 255, 0.3); color: #FF6B00; transition: all 0.2s ease;">
+                          <i class="bi bi-buildings fs-6"></i>
+                        </div>
+                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Industries</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="<?= SITE_URL ?>/blog.php" class="lum-megamenu-bottom-link d-flex align-items-center justify-content-center gap-2 py-3 px-2">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; border: 1px solid rgba(255, 255, 255, 0.3); color: #FF6B00; transition: all 0.2s ease;">
+                          <i class="bi bi-journal-text fs-6"></i>
+                        </div>
+                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Tech Insights</span>
                       </a>
                     </div>
                     <div class="col">
@@ -397,7 +405,7 @@ $og_image = $og_image ?? (SITE_URL . '/assets/images/logo/lumetech-logo-dark.svg
                         <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; border: 1px solid rgba(255, 255, 255, 0.3); color: #FF6B00; transition: all 0.2s ease;">
                           <i class="bi bi-headset fs-6"></i>
                         </div>
-                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Noida Desk</span>
+                        <span class="fw-bold text-white text-uppercase" style="font-size: 0.78rem; letter-spacing: 0.05em;">Request Demo</span>
                       </a>
                     </div>
                   </div>
