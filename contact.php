@@ -38,11 +38,16 @@ require_once __DIR__ . '/includes/header.php';
       <div class="col-md-4">
         <div class="lum-card h-100 p-4 text-center">
           <div class="lum-card__icon mx-auto mb-3"><i class="bi bi-telephone-fill"></i></div>
-          <h4 class="lum-heading-5 mb-2">Direct Phone Support</h4>
-          <p class="small text-muted mb-3">Speak with our sales and scoping desk immediately.</p>
-          <a href="tel:<?= CONTACT_PHONE ?>" class="lum-btn lum-btn-outline lum-btn-sm w-100 justify-content-center">
-            Call <?= CONTACT_PHONE_FORMATTED ?>
-          </a>
+          <h4 class="lum-heading-5 mb-2">Phone Numbers</h4>
+          <p class="small text-muted mb-3">Speak directly with our sales and technical scoping desk.</p>
+          <div class="d-flex flex-column gap-2">
+            <a href="tel:<?= CONTACT_PHONE ?>" class="lum-btn lum-btn-outline lum-btn-sm w-100 justify-content-center">
+              <i class="bi bi-telephone me-1"></i> <?= CONTACT_PHONE_FORMATTED ?>
+            </a>
+            <a href="tel:<?= CONTACT_PHONE_ALT ?>" class="lum-btn lum-btn-outline lum-btn-sm w-100 justify-content-center">
+              <i class="bi bi-telephone me-1"></i> <?= CONTACT_PHONE_ALT_FORMATTED ?>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -50,10 +55,10 @@ require_once __DIR__ . '/includes/header.php';
       <div class="col-md-4">
         <div class="lum-card h-100 p-4 text-center">
           <div class="lum-card__icon mx-auto mb-3"><i class="bi bi-envelope-fill"></i></div>
-          <h4 class="lum-heading-5 mb-2">Corporate Email</h4>
-          <p class="small text-muted mb-3">Send RFPs, project specs, and technical documentation.</p>
-          <a href="mailto:<?= CONTACT_EMAIL ?>" class="lum-btn lum-btn-outline lum-btn-sm w-100 justify-content-center">
-            <?= CONTACT_EMAIL ?>
+          <h4 class="lum-heading-5 mb-2">Email Address</h4>
+          <p class="small text-muted mb-3"><?= CONTACT_EMAIL_SUBTEXT ?></p>
+          <a href="mailto:<?= CONTACT_EMAIL ?>" class="lum-btn lum-btn-outline lum-btn-sm w-100 justify-content-center mt-auto">
+            <i class="bi bi-envelope me-1"></i> <?= CONTACT_EMAIL ?>
           </a>
         </div>
       </div>

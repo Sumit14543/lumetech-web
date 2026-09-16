@@ -26,11 +26,14 @@ if (APP_ENV === 'production') {
 }
 
 // Contact Constants
-define('CONTACT_PHONE', '7007892136');
-define('CONTACT_PHONE_FORMATTED', '+91 7007892136');
+define('CONTACT_PHONE', '9876543210');
+define('CONTACT_PHONE_FORMATTED', '+91 98765 43210');
+define('CONTACT_PHONE_ALT', '9876543211');
+define('CONTACT_PHONE_ALT_FORMATTED', '+91 98765 43211');
 define('CONTACT_EMAIL', 'hello@lumetech.info');
+define('CONTACT_EMAIL_SUBTEXT', 'Send us your ideas. We typically respond within 24 hours.');
 define('CONTACT_ADDRESS', 'Lumetech Technologies, Sector-44, Noida, Uttar Pradesh');
-define('WHATSAPP_NUMBER', '917007892136');
+define('WHATSAPP_NUMBER', '919876543210');
 
 // Database Credentials with Environment Fallbacks
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');

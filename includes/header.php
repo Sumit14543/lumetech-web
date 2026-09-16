@@ -119,7 +119,7 @@ $og_image = $og_image ?? (SITE_URL . '/assets/images/logo/lumetech-logo-dark.svg
 
         <!-- Right Zone: WhatsApp Scoping, Noida Desk & Brand Orange CTA Button -->
         <div class="d-flex align-items-center gap-3 gap-xl-4 flex-nowrap">
-          <a href="https://wa.me/917007892136?text=Hello%20Lumetech%20Team,%20I%20want%20to%20discuss%20an%20enterprise%20project." target="_blank" rel="noopener noreferrer" class="text-decoration-none" style="color: #FFFFFF !important; white-space: nowrap;">
+          <a href="https://wa.me/<?= WHATSAPP_NUMBER ?>?text=Hello%20Lumetech%20Team,%20I%20want%20to%20discuss%20an%20enterprise%20project." target="_blank" rel="noopener noreferrer" class="text-decoration-none" style="color: #FFFFFF !important; white-space: nowrap;">
             <i class="bi bi-whatsapp me-1" style="color: #25D366 !important;"></i> WhatsApp
           </a>
 
