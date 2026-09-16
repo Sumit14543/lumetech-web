@@ -7,7 +7,10 @@
 define('APP_ENV', getenv('APP_ENV') ?: 'production'); // 'development' or 'production'
 define('APP_NAME', 'Lumetech Technologies');
 define('APP_TAGLINE', 'Enterprise Technology & B2B Solutions');
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+$is_https = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') 
+    || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)
+    || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) === 'https');
+$protocol = $is_https ? "https://" : "http://";
 $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $default_site_url = ($host !== 'localhost' && !str_starts_with($host, 'localhost:')) ? $protocol . $host : 'http://localhost/web-lumetech';
 define('SITE_URL', getenv('SITE_URL') ?: $default_site_url);
