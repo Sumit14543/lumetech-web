@@ -973,21 +973,21 @@
   color: #09041a !important;
 }
 
-/* --- Animated Request A Quote CTA Button (Vivid Top-Left to Bottom-Right Diagonal Flow) --- */
+/* --- Animated Request A Quote CTA Button (Vivid Continuous Multi-Color Gradient & Pulsing Glow) --- */
 .lum-animated-quote-btn {
   position: relative !important;
   overflow: hidden !important;
   z-index: 1 !important;
-  background: linear-gradient(135deg, #FF6B00 0%, #FF3A00 25%, #FF8500 50%, #FFC107 75%, #FF6B00 100%) !important;
+  background: linear-gradient(135deg, #FF6B00 0%, #FF2500 25%, #FF9100 50%, #E65100 75%, #FF6B00 100%) !important;
   background-size: 300% 300% !important;
-  animation: lumGradientFlow 3.5s ease infinite !important;
+  animation: lumGradientFlow 3s ease infinite, lumPulseGlow 2.5s ease-in-out infinite alternate !important;
   color: #FFFFFF !important;
   border-radius: 6px !important;
   font-size: 0.78rem !important;
-  letter-spacing: 0.04em !important;
+  letter-spacing: 0.05em !important;
   white-space: nowrap !important;
   border: none !important;
-  box-shadow: 0 3px 12px rgba(255, 107, 0, 0.45) !important;
+  box-shadow: 0 4px 16px rgba(255, 107, 0, 0.5) !important;
   transition: transform 0.25s ease, box-shadow 0.25s ease !important;
 }
 
@@ -1002,18 +1002,18 @@
   background: linear-gradient(
     135deg, 
     rgba(255, 255, 255, 0) 0%, 
-    rgba(255, 255, 255, 0.65) 50%, 
+    rgba(255, 255, 255, 0.7) 50%, 
     rgba(255, 255, 255, 0) 100%
   ) !important;
   z-index: 2 !important;
   pointer-events: none !important;
-  animation: lumDiagonalLightShine 2.5s ease-in-out infinite !important;
+  animation: lumDiagonalLightShine 2.2s ease-in-out infinite !important;
 }
 
 .lum-animated-quote-btn:hover {
   color: #FFFFFF !important;
-  box-shadow: 0 5px 20px rgba(255, 107, 0, 0.75) !important;
-  transform: translateY(-1px) scale(1.02) !important;
+  box-shadow: 0 6px 24px rgba(255, 107, 0, 0.85) !important;
+  transform: translateY(-1px) scale(1.03) !important;
 }
 
 @keyframes lumGradientFlow {
@@ -1025,6 +1025,18 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes lumPulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 107, 0, 0.5), 0 0 20px rgba(255, 107, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 37, 0, 0.85), 0 0 32px rgba(255, 145, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 107, 0, 0.5), 0 0 20px rgba(255, 107, 0, 0.3);
   }
 }
 
