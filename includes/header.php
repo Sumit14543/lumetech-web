@@ -428,7 +428,7 @@ $og_image = $og_image ?? (SITE_URL . '/assets/images/logo/lumetech-logo-dark.svg
 
         <!-- CTA Action Buttons & Mobile Trigger -->
         <div class="d-flex align-items-center gap-3">
-          <a href="<?= SITE_URL ?>/contact.php" class="lum-btn lum-btn-primary lum-btn-sm d-none d-sm-inline-flex">
+          <a href="<?= SITE_URL ?>/contact.php" class="lum-btn lum-btn-primary lum-btn-sm d-none d-sm-inline-flex lum-animated-quote-btn">
             Get a Quote <i class="bi bi-arrow-right-short"></i>
           </a>
           <button class="lum-btn lum-btn-secondary lum-btn-sm d-lg-none lum-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
