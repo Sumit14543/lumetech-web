@@ -41,7 +41,6 @@ $featured = reset($articles);
     <div class="lum-card p-4 p-lg-5 border-info border-opacity-25">
       <div class="row align-items-center g-4">
         <div class="col-lg-7">
-          <span class="badge bg-info text-dark mb-3"><?= sanitize_string($featured['category']) ?> • Featured Article</span>
           <h2 class="lum-heading-2 mb-3">
             <a href="<?= SITE_URL ?>/blog-detail.php?slug=<?= $featured['slug'] ?>" class="text-white text-decoration-none hover-cyan">
               <?= sanitize_string($featured['title']) ?>
@@ -85,7 +84,6 @@ $featured = reset($articles);
         <article class="lum-card d-flex flex-column justify-content-between lum-blog-item">
           <div>
             <img src="<?= sanitize_string($post['image']) ?>" alt="<?= sanitize_string($post['title']) ?>" class="img-fluid rounded mb-3 border border-secondary border-opacity-25" style="max-height: 180px; width: 100%; object-fit: cover;">
-            <span class="badge bg-secondary bg-opacity-50 text-info border border-info border-opacity-25 mb-2"><?= sanitize_string($post['category']) ?></span>
             <h4 class="lum-heading-5 mb-2">
               <a href="<?= SITE_URL ?>/blog-detail.php?slug=<?= $post['slug'] ?>" class="text-white text-decoration-none hover-cyan">
                 <?= sanitize_string($post['title']) ?>

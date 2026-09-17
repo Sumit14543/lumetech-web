@@ -368,7 +368,6 @@ $all_products = get_products_data();
       ?>
         <div class="lum-card d-flex flex-column justify-content-between">
           <div>
-            <span class="badge bg-secondary bg-opacity-50 text-info border border-info border-opacity-25 mb-3"><?= sanitize_string($prd['category']) ?></span>
             <h3 class="lum-heading-5 mb-2"><?= sanitize_string($prd['name']) ?></h3>
             <p class="small text-muted mb-4"><?= sanitize_string($prd['short_desc']) ?></p>
           </div>
@@ -531,7 +530,6 @@ $all_products = get_products_data();
     <div class="row g-4">
       <div class="col-lg-6">
         <div class="lum-card h-100 p-4">
-          <span class="badge bg-info text-dark mb-3">Fintech Case Study</span>
           <h3 class="lum-heading-4 mb-3">Processing $500M+ Monthly Loans with Zero Downtime</h3>
           <p class="text-secondary small mb-4">
             A leading NBFC migrated their loan origination and collection workflows to Lumetech CRM, reducing customer approval time from 3 days to under 15 minutes.
@@ -555,7 +553,6 @@ $all_products = get_products_data();
 
       <div class="col-lg-6">
         <div class="lum-card h-100 p-4">
-          <span class="badge bg-info text-dark mb-3">Quick Commerce Case Study</span>
           <h3 class="lum-heading-4 mb-3">Scaling 10-Minute Grocery Delivery Across 120+ Dark Stores</h3>
           <p class="text-secondary small mb-4">
             Deployed Lumetech Quick Commerce platform to manage rider dispatch and inventory telemetry, achieving 99.4% on-time delivery across major metro cities.
@@ -653,21 +650,18 @@ $all_products = get_products_data();
 
     <div class="lum-grid lum-grid-3">
       <div class="lum-card">
-        <span class="badge bg-info text-dark mb-3">Cloud & DevOps</span>
         <h4 class="lum-heading-5 mb-2">Zero-Downtime Microservice Deployment Strategies</h4>
         <p class="small text-muted mb-4">How blue-green deployments and automated canary tests prevent outage risks during production updates.</p>
         <span class="small text-secondary"><i class="bi bi-clock me-1"></i> 5 min read</span>
       </div>
 
       <div class="lum-card">
-        <span class="badge bg-info text-dark mb-3">AI & Automation</span>
         <h4 class="lum-heading-5 mb-2">Building Enterprise Knowledge RAG Pipelines</h4>
         <p class="small text-muted mb-4">Connecting vector databases with local LLMs to query confidential corporate document vaults safely.</p>
         <span class="small text-secondary"><i class="bi bi-clock me-1"></i> 7 min read</span>
       </div>
 
       <div class="lum-card">
-        <span class="badge bg-info text-dark mb-3">Fintech Security</span>
         <h4 class="lum-heading-5 mb-2">PCI-DSS 4.0 Compliance: What CTOs Must Prepare</h4>
         <p class="small text-muted mb-4">Key changes in encryption protocols, multi-factor authentication, and continuous API payload monitoring.</p>
         <span class="small text-secondary"><i class="bi bi-clock me-1"></i> 6 min read</span>

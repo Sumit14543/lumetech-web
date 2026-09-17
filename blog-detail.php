@@ -32,7 +32,6 @@ require_once __DIR__ . '/includes/header.php';
 
     <!-- Article Header -->
     <div class="max-w-4xl mx-auto text-center py-4">
-      <span class="badge bg-info text-dark font-mono mb-3"><?= sanitize_string($post['category']) ?></span>
       <h1 class="lum-heading-1 mb-4"><?= sanitize_string($post['title']) ?></h1>
       
       <div class="d-flex align-items-center justify-content-center gap-4 text-muted small">
@@ -91,7 +90,6 @@ require_once __DIR__ . '/includes/header.php';
       ?>
         <div class="lum-card d-flex flex-column justify-content-between">
           <div>
-            <span class="badge bg-secondary bg-opacity-50 text-info border border-info border-opacity-25 mb-2"><?= sanitize_string($rel['category']) ?></span>
             <h4 class="lum-heading-5 mb-2"><?= sanitize_string($rel['title']) ?></h4>
             <p class="small text-muted mb-4"><?= sanitize_string($rel['excerpt']) ?></p>
           </div>

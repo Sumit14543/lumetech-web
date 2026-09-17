@@ -23,6 +23,10 @@ $og_image = $og_image ?? (SITE_URL . '/assets/images/logo/lumetech-logo-dark.svg
   <meta name="description" content="<?= sanitize_string($page_desc) ?>">
   <meta name="theme-color" content="#F8FAFC">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="<?= SITE_URL ?>/assets/images/logo/lumetech-logo.png">
+  <link rel="apple-touch-icon" href="<?= SITE_URL ?>/assets/images/logo/lumetech-logo.png">
+
   <!-- Canonical URL -->
   <link rel="canonical" href="<?= sanitize_string($canonical_url) ?>">
 

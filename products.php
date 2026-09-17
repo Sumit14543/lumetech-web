@@ -60,10 +60,6 @@ $categories = array_unique(array_column($products, 'category'));
       <?php foreach ($products as $prd): ?>
         <div class="lum-card d-flex flex-column justify-content-between">
           <div>
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <span class="badge bg-secondary bg-opacity-50 text-info border border-info border-opacity-25"><?= sanitize_string($prd['category']) ?></span>
-              <span class="small text-muted"><i class="bi bi-patch-check-fill text-info me-1"></i> <?= sanitize_string($prd['badge']) ?></span>
-            </div>
             <h3 class="lum-heading-4 mb-2"><?= sanitize_string($prd['name']) ?></h3>
             <p class="small text-muted mb-4"><?= sanitize_string($prd['short_desc']) ?></p>
             

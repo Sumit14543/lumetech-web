@@ -51,8 +51,7 @@ $categories = array_unique(array_column($case_studies, 'category'));
       <?php foreach ($case_studies as $cs): ?>
         <div class="lum-card d-flex flex-column justify-content-between lum-portfolio-item" data-category="<?= sanitize_string(strtolower(str_replace(' ', '-', $cs['category']))) ?>">
           <div>
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <span class="badge bg-info text-dark font-mono"><?= sanitize_string($cs['category']) ?></span>
+            <div class="d-flex align-items-center justify-content-end mb-3">
               <span class="small text-muted"><i class="bi bi-building me-1"></i> <?= sanitize_string($cs['client']) ?></span>
             </div>
             <h3 class="lum-heading-4 mb-3"><?= sanitize_string($cs['title']) ?></h3>
