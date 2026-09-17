@@ -96,7 +96,7 @@ require_once __DIR__ . '/includes/header.php';
   <div class="lum-container">
     <div class="d-flex justify-content-between align-items-center mb-4">
       <h3 class="lum-heading-3 mb-0">Explore Other Engineering Services</h3>
-      <a href="<?= SITE_URL ?>/services.php" class="lum-btn lum-btn-outline lum-btn-sm">View All Services</a>
+      <a href="<?= SITE_URL ?>/services.php" class="lum-btn lum-btn-outline lum-btn-sm d-none d-md-inline-flex">View All Services</a>
     </div>
 
     <div class="lum-grid lum-grid-3">
@@ -118,6 +118,13 @@ require_once __DIR__ . '/includes/header.php';
           </a>
         </div>
       <?php endforeach; ?>
+    </div>
+
+    <!-- Mobile-Only Bottom CTA Button -->
+    <div class="text-center mt-4 d-md-none">
+      <a href="<?= SITE_URL ?>/services.php" class="lum-btn lum-btn-outline lum-btn-sm w-100 justify-content-center">
+        View All Services <i class="bi bi-arrow-right ms-1"></i>
+      </a>
     </div>
   </div>
 </section>

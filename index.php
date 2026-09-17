@@ -35,12 +35,12 @@ $all_products = get_products_data();
           Lumetech delivers ultra-scalable web development, cross-platform mobile apps, custom CRM solutions, cloud DevOps, and autonomous AI agents engineered for sub-second speed, bank-grade security, and zero-downtime enterprise reliability.
         </p>
 
-        <!-- CTA Action Buttons (Interactive Hover Animations Enabled) -->
-        <div class="d-flex flex-wrap gap-3 mt-5 pt-2 mb-2">
-          <a href="<?= SITE_URL ?>/products.php" class="lum-btn lum-hero-cta-primary">
+        <!-- CTA Action Buttons -->
+        <div class="d-flex flex-column flex-sm-row gap-3 mt-4 mt-md-5 pt-2 mb-2 w-100">
+          <a href="<?= SITE_URL ?>/products.php" class="lum-btn lum-hero-cta-primary justify-content-center">
             Explore Product Solutions <i class="bi bi-arrow-right-circle-fill ms-1 text-white"></i>
           </a>
-          <a href="<?= SITE_URL ?>/services.php" class="lum-btn lum-hero-cta-secondary">
+          <a href="<?= SITE_URL ?>/services.php" class="lum-btn lum-hero-cta-secondary justify-content-center">
             Our Core Services <i class="bi bi-gear-wide-connected ms-1 text-white"></i>
           </a>
         </div>
@@ -289,11 +289,11 @@ $all_products = get_products_data();
   <div class="lum-blob lum-blob-orange" style="bottom: -50px; left: -80px;"></div>
 
   <div class="lum-container position-relative z-1">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+    <div class="d-flex align-items-end justify-content-between mb-5">
       <div>
         <h2 class="lum-heading-2 mb-0">Core Engineering Solutions</h2>
       </div>
-      <a href="<?= SITE_URL ?>/services.php" class="lum-btn lum-btn-outline lum-btn-sm mt-3 mt-md-0">
+      <a href="<?= SITE_URL ?>/services.php" class="lum-btn lum-btn-outline lum-btn-sm d-none d-md-inline-flex">
         View All 9 Services <i class="bi bi-arrow-right"></i>
       </a>
     </div>
@@ -332,6 +332,13 @@ $all_products = get_products_data();
         </div>
       <?php endforeach; ?>
     </div>
+
+    <!-- Mobile-Only Bottom CTA Button -->
+    <div class="text-center mt-4 d-md-none">
+      <a href="<?= SITE_URL ?>/services.php" class="lum-btn lum-btn-outline lum-btn-sm w-100 justify-content-center">
+        View All 9 Services <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -345,11 +352,11 @@ $all_products = get_products_data();
 <!-- 6. SECTION: Featured Products Showcase -->
 <section class="lum-section">
   <div class="lum-container">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+    <div class="d-flex align-items-end justify-content-between mb-5">
       <div>
         <h2 class="lum-heading-2 mb-0">Turnkey Enterprise Products</h2>
       </div>
-      <a href="<?= SITE_URL ?>/products.php" class="lum-btn lum-btn-outline lum-btn-sm mt-3 mt-md-0">
+      <a href="<?= SITE_URL ?>/products.php" class="lum-btn lum-btn-outline lum-btn-sm d-none d-md-inline-flex">
         View All 11 Products <i class="bi bi-arrow-right"></i>
       </a>
     </div>
@@ -372,6 +379,13 @@ $all_products = get_products_data();
           </div>
         </div>
       <?php endforeach; ?>
+    </div>
+
+    <!-- Mobile-Only Bottom CTA Button -->
+    <div class="text-center mt-4 d-md-none">
+      <a href="<?= SITE_URL ?>/products.php" class="lum-btn lum-btn-outline lum-btn-sm w-100 justify-content-center">
+        View All 11 Products <i class="bi bi-arrow-right ms-1"></i>
+      </a>
     </div>
   </div>
 </section>
@@ -628,11 +642,11 @@ $all_products = get_products_data();
 <!-- 11. SECTION: Blog & Insights Preview -->
 <section class="lum-section">
   <div class="lum-container">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+    <div class="d-flex align-items-end justify-content-between mb-5">
       <div>
         <h2 class="lum-heading-2 mb-0">Latest Enterprise Research</h2>
       </div>
-      <a href="<?= SITE_URL ?>/blog.php" class="lum-btn lum-btn-outline lum-btn-sm mt-3 mt-md-0">
+      <a href="<?= SITE_URL ?>/blog.php" class="lum-btn lum-btn-outline lum-btn-sm d-none d-md-inline-flex">
         Explore All Articles <i class="bi bi-arrow-right"></i>
       </a>
     </div>
@@ -658,6 +672,13 @@ $all_products = get_products_data();
         <p class="small text-muted mb-4">Key changes in encryption protocols, multi-factor authentication, and continuous API payload monitoring.</p>
         <span class="small text-secondary"><i class="bi bi-clock me-1"></i> 6 min read</span>
       </div>
+    </div>
+
+    <!-- Mobile-Only Bottom CTA Button -->
+    <div class="text-center mt-4 d-md-none">
+      <a href="<?= SITE_URL ?>/blog.php" class="lum-btn lum-btn-outline lum-btn-sm w-100 justify-content-center">
+        Explore All Articles <i class="bi bi-arrow-right ms-1"></i>
+      </a>
     </div>
   </div>
 </section>

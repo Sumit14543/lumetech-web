@@ -25,7 +25,12 @@ img, video, iframe, canvas, svg {
     padding-bottom: 2.5rem !important;
   }
   
-  .lum-btn-lg {
+  .lum-btn-lg,
+  .lum-hero-cta-primary,
+  .lum-hero-cta-secondary {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
     padding: 0.85rem 1.25rem !important;
     font-size: var(--lum-fs-base) !important;
   }
